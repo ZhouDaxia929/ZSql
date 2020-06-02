@@ -17,6 +17,6 @@ include_directories(${INC_DIR})
 link_directories(${LINK_DIR})
 link_libraries(libmysql)
 
-add_executable(ZSql main.cpp ZSql.cpp ZSql.h ResultData.h ResultData.cpp)
+add_executable(ZSql main.cpp ZSql.cpp ZSql.h ResultData.h ResultData.cpp public.h connection.cpp connection.h connectionPool.cpp connectionPool.h)
 
 target_link_libraries(ZSql libmysql)
